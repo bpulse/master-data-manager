@@ -1,13 +1,14 @@
-BPulse master data manager
+#### BPulse master data manager
 
-- Introducción
-BPulse master data manager es una herramienta con el fin de realizar la inserción de datos maestros en el aplicativo bpulse
+####- Introducción
+BPulse master data manager es una herramienta que permite realizar la inserción de datos maestros en el aplicativo bpulse
 
-- Requisitos previos
-*Tener descargado el jar, o usando maven, el driver jdbc con la base de datos a utilizar
-*Crear en la aplicación el mastertype y el masterdef a utilizar
+####- Requisitos previos
+* Tener descargado el jar, o usando maven, el driver jdbc con la base de datos a utilizar
+* Crear en la aplicación el mastertype y el masterdef a utilizar
 
-- Configuración: La configuración posible esta situada en el fichero application.properties. En este fichero, se debe definir:
+####- Configuración: 
+La configuración posible esta situada en el fichero application.properties. En este fichero, se debe definir:
   * dbdriver - Driver jdbc
   * dbconnection - Cadena de conexión jdbc
   * dbuser - Usuario de conexión a la base de datos
@@ -19,8 +20,8 @@ BPulse master data manager es una herramienta con el fin de realizar la inserci�
   * bp.password - Password del usuario
   * bp.query - petición SQL a lanzar. El primer campo es el codigo de maestro, el siguiente es su binding, y los siguientes son atributos de masterdef. Ejemplo: select ID_POBLACION, NOMBRE, ID_ZONA from SYSDBA.POBLACION
   
-- Ejecución
+####- Ejecución
   Para su uso, es necesario arrancar desde la clase App.java
 
-- Documentación relacionada
- [API de Maestros](http://www.bpulse.io/wiki/rest-api-gestion-maestros/)
+####- Documentación relacionada
+* [API de Maestros](http://www.bpulse.io/wiki/rest-api-gestion-maestros/)
